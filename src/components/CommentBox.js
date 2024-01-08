@@ -10,6 +10,7 @@ const CommentBox = ({ userId, userComment, setUserComment, handleComment }) => {
           <textarea
             rows="4"
             value={userComment}
+            required={true}
             onChange={(e) => setUserComment(e.target.value)}
             className="form-control description"
           />
